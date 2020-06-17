@@ -1,0 +1,20 @@
+  <h4>{{title}}</h4>
+  <div class="row border rounded">
+    {{#each data}}
+    <div class="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6 mb-5">
+      <div class="_card">
+        <div class="overlay_btn">
+          <a class="text-primary" href="/editar/{{_id}}"><i class="fa fa-pencil fa-lg"></i></a>
+          <a class="text-danger" href="/eliminar/{{_id}}"><i class="fa fa-times pull-right fa-lg mt-1"></i></a>
+        </div>
+        <div class="_card_image"> <img src="{{url}}" /> </div>
+        <div class="overlay text-white">
+          <img width="80" src="/images/play_white.png">
+        </div>
+        <div class="_card_title _title-white" style="width: 100%;">
+          {{name}}
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>
